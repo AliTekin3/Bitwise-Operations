@@ -1,35 +1,35 @@
 #include <stdio.h>
 
 int main() {
-    unsigned char a = 6; // Binary: 0000 0110
-    unsigned char b = 3; // Binary: 0000 0011
+     char a = 6; // Binary: 0000 0110
+    char b = 3; // Binary: 0000 0011
     
     // 1. Bitwise AND (&)
     //   0000 0110  (6)
     // & 0000 0011  (3)
     //   ---------
-    //   0000 0010  -> Ondalık karşılığı: 2
+    //   0000 0010  -> OndalÄ±k karÅŸÄ±lÄ±ÄŸÄ±: 2
     printf("a & b (AND)  = %d\n", a & b);
 
     // 2. Bitwise OR (|)
     //   0000 0110  (6)
     // | 0000 0011  (3)
     //   ---------
-    //   0000 0111  -> Ondalık karşılığı: 7
+    //   0000 0111  -> OndalÄ±k karÅŸÄ±lÄ±ÄŸÄ±: 7
     printf("a | b (OR)   = %d\n", a | b);
 
-    // 3. Bitwise XOR (^) -> Bitler farklıysa 1, aynıysa 0 üretir.
+    // 3. Bitwise XOR (^) -> Bitler farklÄ±ysa 1, aynÄ±ysa 0 Ã¼retir.
     //   0000 0110  (6)
     // ^ 0000 0011  (3)
     //   ---------
-    //   0000 0101  -> Ondalık karşılığı: 5
+    //   0000 0101  -> OndalÄ±k karÅŸÄ±lÄ±ÄŸÄ±: 5
     printf("a ^ b (XOR)  = %d\n", a ^ b);
 
-    // 4. Bitwise NOT (~) -> Tüm bitlerin tersini alır (0->1, 1->0).
+    // 4. Bitwise NOT (~) -> TÃ¼m bitlerin tersini alÄ±r (0->1, 1->0).
     // ~ 0000 0110  (6)
     //   ---------
-    //   1111 1001  -> Isaretsiz (unsigned char) sistemde ondalık karşılığı: 249
-    printf("~a    (NOT)  = %d\n", (unsigned char)~a);
+   // sistemde ondalÄ±k karÅŸÄ±lÄ±ÄŸÄ±: 249
+    printf("~a    (NOT)  = %d\n", (char)~a);
 
     return 0;
 }
